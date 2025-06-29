@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 :root {
     --primary-color : #0d0f1b;
@@ -13,7 +18,7 @@
     --card-bg : #1b1d30;
     --hover-color: #ff83b1;
     --border-color : #2c2f45;
-    --font-stack : 'Poppins', sans-serif;
+    --font-stack : 'Permanent Marker', cursive;
 }
 /* --------------------------------------------------------------------------------------- */
 /* -----------------------------------------main things--------------------------------------*/
@@ -24,6 +29,10 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     min-height: 100vh;
+}
+.container {
+    display : flex;
+    height: 100vh;
 }
 a {
     color :var(--accent-color);
@@ -50,15 +59,40 @@ button:hover {
     background-color: var(--hover-color);
 }
 
-.header {
-    width: 100%;
-    height: 1vh;
-}
+
+
+
 
 /* --------------------------------------------------------------------------------------- */
 /* -----------------------------------------site header--------------------------------------*/
 /* --------------------------------------------------------------------------------------- */
 
-.logo{
-    width: 20px;
+.header{
+    width: 200px;
+    background-color: #15172b;
+    color: var(--text-color);
+    padding: 20px;
+}
+
+nav ul{
+    list-style : none;
+    padding : 0;
+}
+
+nav ul li {
+    margin : 15px 0;
+}
+
+nav ul li a {
+    color : var(--text-color);
+    text-decoration: none;
+}
+main {
+    flex-grow : 1;
+    padding : 30px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.logo img{
+    width: 40px;
 }
