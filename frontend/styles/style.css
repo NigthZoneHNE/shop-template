@@ -1,0 +1,52 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color : #0d0f1b;
+    --secondary-color : #15172b;
+    --accent-color : #ff4f9a;
+    --text-color : #f1f1f1;
+    --muted-text : #b0b0b0;
+    --card-bg : #1b1d30;
+    --hover-color: #ff83b1;
+    --border-color : #2c2f45;
+    --font-stack : 'Poppins', sans-serif;
+}
+/* --------------------------------------------------------------------------------------- */
+/* -----------------------------------------main things--------------------------------------*/
+/* --------------------------------------------------------------------------------------- */
+body {
+    font-family: var(--font-stack);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+a {
+    color :var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color : var(--hover-color)
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding : 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
